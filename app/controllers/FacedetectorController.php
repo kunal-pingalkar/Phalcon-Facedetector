@@ -67,7 +67,7 @@ class FacedetectorController extends FdetectorController
 		else
 		{
 			// Error message if file is not been selected.
-			$this->flash->error("<font color='red'>File has been not selected to detect the face.</font>");
+			$this->flash->error("<font color='red'>Please select the file for detect the face.</font>");
 			return $this->dispatcher->forward(array(
                 "controller" => "index",
                 "action" => "index"
