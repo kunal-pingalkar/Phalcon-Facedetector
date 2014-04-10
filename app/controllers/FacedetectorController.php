@@ -42,7 +42,7 @@ class FacedetectorController extends FdetectorController
 						imagejpeg($image, $config->application->uploadDir.$imageNewName);
 	 					imagedestroy($image);
 						$detectImage = $config->application->uploadDir.$imageNewName;
-						$detector->faceDetect($detectImage);	
+						$detector->faceDetectAction($detectImage);	
 						// Remove the unwanted images
 						chmod($selectFile, 777);
 						unlink($selectFile);
